@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Exercicio de Tabelas</h1>
@@ -14,9 +32,58 @@
 
         </caption>
         <thead>
-
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
+            <tr>
+                <th rowspan="3" scope="colgroup">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Carla Maria</td>
+                <td>Esportes</td>
+                <td>Terror</td>
+                <td>Açao</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Futebol</td>
+                <td>volei</td>
+                <td>basquete</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="colgroup">Homens</th>
+                <td>Marcio costa</td>
+                <td>Capoeira</td>
+                <td>Muai Tai</td>
+                <td>Nataçao</td>
+            </tr>
+            <tr>
+                <td>Fábio silva</td>
+                <td>Fazenda</td>
+                <td>Viagens</td>
+                <td>Baladas</td>
+            </tr>
+            <tr>
+                <td>Leandro Vieira</td>
+                <td>Feijoada</td>
+                <td>Sarapatel</td>
+                <td>Mocotó</td>
+            </tr>
+
 
         </tbody>
     </table>
